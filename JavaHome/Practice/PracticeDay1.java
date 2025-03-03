@@ -8,7 +8,7 @@ public class PracticeDay1 {
         String[] words = s.split(" ");
         int prev = -1;
         for (int i = 0; i < words.length; i++) {
-            System.out.println(Integer.valueOf(words[i]));
+            System.out.println(Character.isDigit(words[i].charAt(0)));
             if (Character.isDigit(words[i].charAt(0))) {
                 if (Integer.valueOf(words[i]) > prev) {
                     prev = Integer.valueOf(words[i]);
