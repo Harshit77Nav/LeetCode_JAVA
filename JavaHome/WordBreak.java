@@ -5,7 +5,7 @@ public class WordBreak {
     public static void main(String[] args) {
         //s = "leetcode", wordDict = ["leet","code"]
         String s = "catsandog";
-        String[] wordDict = {"cats","dog","sand","and","cat"}
+        String[] wordDict = {"cats","dog","sand","and","cat"};
         Set<String> mySet = new HashSet<>();
         for(int i=0; i < wordDict.length; i++) {
             mySet.add(wordDict[i]);
