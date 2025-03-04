@@ -1,5 +1,5 @@
 //639. Binary Number with Alternating Bits
-import java.util.*;
+// import java.util.*;
 public class BinaryNumberwithAlternatingBits {
     public static void main(String[] args) {
         //n = 5;
