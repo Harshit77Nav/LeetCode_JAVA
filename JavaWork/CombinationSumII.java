@@ -7,7 +7,7 @@ public class CombinationSumII {
         //candidates = [10,1,2,7,6,1,5], target = 8
         int candidates[] = {10,1,2,7,6,1,5}, target = 8;
         Arrays.sort(candidates);
-        List<List<Integer>> comb = new ArrayList();
+        List<List<Integer>> comb = new ArrayList<>();
        getCombination(0, candidates, new ArrayList<>(), comb, target);
        System.out.println(comb);
     //    return comb;

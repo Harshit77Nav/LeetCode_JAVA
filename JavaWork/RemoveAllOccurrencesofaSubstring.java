@@ -1,5 +1,5 @@
 // 1910. Remove All Occurrences of a Substring
-import java.util.*;
+// import java.util.*;
 
 public class RemoveAllOccurrencesofaSubstring {
     public static void main(String[] args) {

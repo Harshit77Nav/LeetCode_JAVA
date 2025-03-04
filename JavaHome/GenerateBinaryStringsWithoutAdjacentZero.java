@@ -1,7 +1,7 @@
 // 3211. Generate Binary Strings Without Adjacent Zeros
 import java.util.*;
 
-public class GenerateBinaryStringsWithoutAdjacentZeros {
+public class GenerateBinaryStringsWithoutAdjacentZero {
     public static void main(String[] args) {
         // n = 3;
         int n = 11;
@@ -33,26 +33,26 @@ public class GenerateBinaryStringsWithoutAdjacentZeros {
 
 
 // second solution ........................................................................optimal approach
-class Solution {
+// class Solution {
     
-    public List<String> validStrings(int n) {
-        var results = new ArrayList<String>();
-        generateValidStrings("", n, results);
-        return results;
-    }
+//     public List<String> validStrings(int n) {
+//         var results = new ArrayList<String>();
+//         generateValidStrings("", n, results);
+//         return results;
+//     }
 
-    private static void generateValidStrings(String current, int n, List<String> results) {
-        if (current.length() == n) {
-            results.add(current);
-            return;
-        }
+//     private static void generateValidStrings(String current, int n, List<String> results) {
+//         if (current.length() == n) {
+//             results.add(current);
+//             return;
+//         }
 
-        if (current.isEmpty() || current.endsWith("1")) {
-            generateValidStrings(current + "0", n, results);
-            generateValidStrings(current + "1", n, results);
-        } else {
-            generateValidStrings(current + "1", n, results);
-        }
-    }
+//         if (current.isEmpty() || current.endsWith("1")) {
+//             generateValidStrings(current + "0", n, results);
+//             generateValidStrings(current + "1", n, results);
+//         } else {
+//             generateValidStrings(current + "1", n, results);
+//         }
+//     }
 
-}
+// }

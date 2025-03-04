@@ -17,7 +17,7 @@ public class Buildtree {
 
     static class BinaryTree {
         static int indx = -1;
-        public static Node buildtree(int nodes[]) {
+        public  Node buildtree(int nodes[]) {
             indx++;
             if(nodes[indx] == -1) {
                 return null;
@@ -31,7 +31,7 @@ public class Buildtree {
         }
     }
 
-    public static void preorder(Node root) {
+    public void preorder(Node root) {
         if(root == null){
             return;
         }

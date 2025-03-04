@@ -5,7 +5,7 @@ import java.util.*;;
 public class ContainsDuplicate217 {
     public static void main(String[] args) {
         int candidates[] = {2,3,6,7}, target = 7;
-       List<List<Integer>> comb = new ArrayList();
+       List<List<Integer>> comb = new ArrayList<>();
        getCombination(0, candidates, new ArrayList<>(), comb, target);
        System.out.println(comb.toString());
     }

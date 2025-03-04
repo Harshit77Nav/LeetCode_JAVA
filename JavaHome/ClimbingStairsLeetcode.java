@@ -1,6 +1,6 @@
 // 70. Climbing Stairs
 
-public class ClimbingStairs {
+public class ClimbingStairsLeetcode {
     public static void main(String[] args) {
         // n=2;
         int n=2;

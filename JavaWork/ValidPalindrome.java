@@ -1,5 +1,5 @@
 //125. Valid Palindrome
-import java.util.*;
+// import java.util.*;
 
 public class ValidPalindrome {
     public static void main(String[] args) {

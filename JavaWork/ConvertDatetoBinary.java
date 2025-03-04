@@ -1,5 +1,5 @@
 // 3280. Convert Date to Binary
-import java.util.*;
+// import java.util.*;
 
 public class ConvertDatetoBinary {
     public static void main(String[] args) {

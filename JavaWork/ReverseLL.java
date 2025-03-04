@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 public class ReverseLL {
     Node head;
@@ -7,7 +7,7 @@ public class ReverseLL {
     ReverseLL(){
         size = 0;
     }
-
+    
     public class Node {
         String data;
         Node next;
@@ -16,7 +16,9 @@ public class ReverseLL {
             this.data = data;
             this.next = null;
             size++;
+            System.out.println(size);
         }
+        
     }
 
     public void addLast(String data) {
