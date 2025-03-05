@@ -1,10 +1,10 @@
-// Find largest prime factor of a number
+// Find largest prime factor of a number //    263. Ugly Number
 package BCA.Maths;
 
 public class Findlargestprimefactorofanumber {
     public static void main(String[] args) {
         // n = 6;
-        int n = 15;
+        int n = 49;
         int max = -1;
         while((n&1) == 0) {
             max = 2;
@@ -20,6 +20,11 @@ public class Findlargestprimefactorofanumber {
 
         if(n > 1) {
             max = n;
+        }
+        if(max > 5){
+            System.out.println(false);
+        } else {
+            System.out.println(true);
         }
         System.out.println(max);
 
