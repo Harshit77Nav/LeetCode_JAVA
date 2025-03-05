@@ -1,6 +1,6 @@
 // 8. String to Integer (atoi)
 
-public class StringToInteger {
+public class StringtoInteger {
     public static void main(String[] args) {
         // " -042"
         String s = "  -565656566565656";
