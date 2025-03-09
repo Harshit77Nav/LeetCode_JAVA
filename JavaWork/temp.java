@@ -4,25 +4,19 @@ public class temp {
     public static void main(String[] args) {
         // n = 12
         // int nums[] = {4,5,6,7,0,1,2}, target = 0;
-        int n = 13;
-        if(n == 0) System.out.println(0);;
-        long facto = 1;
-        for(int i=1; i<=n; i++) {
-            facto = facto * i;
-        }
-        System.out.println(facto);
-        String str = Long.toString(facto);
-        System.out.println(str);
-        int count = 0;
-        for(int i=str.length()-1; i>=0; i--) {
-            if(str.charAt(i) == '0') {
-                count++;
-                continue;
+        int n = 9669;
+		String str = Integer.toString(n);
+        boolean flag = false;
+        int res = 0;
+        for(int i=0; i<str.length(); i++) {
+            if(str.charAt(i) == '6' && !flag) {
+                res = res *10 + 9;
+                flag = true;
             } else {
-                break;
+                res = (res * 10) + (str.charAt(i) - '0');
             }
         }
-        System.out.println(count);
+        System.out.println(res);
         
     }
 
