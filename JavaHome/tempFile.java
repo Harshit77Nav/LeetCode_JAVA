@@ -1,30 +1,35 @@
 // import java.util.*;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class tempFile {
     public static void main(String[] args) {
         // nums = [1,2,3]
-        int input[] = {2,1,2};
-        for(int i=0; i<input.length; i++) {
-            for(int j=0; j<input.length-1-i; j++) {
-                if(input[j] > input[j+1]){
-                    int temp = input[j];
-                    input[j] = input[j+1];
-                    input[j+1] = temp;
-                }
+        int nums[] = {-100,-98,-1,2,3,4};
+        int prod = 1;
+        int n = nums.length;
+        Arrays.sort(nums);
+        int p1 = nums[0] * nums[1];
+        int p2 = nums[n-1] * nums[n-2];
+        if(p2 > p1) {
+            if(nums[n-3] > nums[0]) {
+                p2 *= nums[n-3];
+            } else {
+                p2 *= nums[0];
             }
-        }
-        int res = 0;
-        for(int i=input.length-1; i>1; i--) {
-            int sum = input[i-1] + input[i-2];
-            if(sum > input[i]) {
-                int peri = sum + input[i];
-                res = Math.max(res, peri);
+            prod = p2;
+        } else {
+            if(nums[2] > nums[n-1]) {
+                p1 *= nums[2];
+            } else {
+                p1 *= nums[n-1];
             }
+            prod = p1;
         }
-        System.out.println(res);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(prod);
 
     }
 }
