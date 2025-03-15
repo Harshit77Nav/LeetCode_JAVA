@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class day3 {
+public class day {
     public static void main(String[] args) {
         int input1[] = {1,2,5,4,0} , input2[] = {2,4,5,0,1};
         for(int i=0; i<input1.length; i++) {
