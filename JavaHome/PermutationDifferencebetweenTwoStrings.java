@@ -1,11 +1,11 @@
 // 3146. Permutation Difference between Two Strings
-import java.util.*;;
+// import java.util.*;;
 
 public class PermutationDifferencebetweenTwoStrings {
     public static void main(String[] args) {
         // s = "abc", t = "bac"
         String  s = "abc", t = "bac";
-        Map<Character, Integer> myMap = new HashMap<>();
+        // Map<Character, Integer> myMap = new HashMap<>();
 
 
         //.........................................First Approach
